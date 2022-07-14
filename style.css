@@ -1,4 +1,50 @@
-*, body, html{
+*,
+body,
+html {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.menu {
+    font-size: 0;
+}
+.menu-item {
+    display: inline-block;
+}
+.menu-item-link {
+    display: block;
+    background: black;
+    color: grey;
+    padding: 50px 70px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.menu-item-link:hover{
+    background: grey;
+    color: black;
+}
+.menu-inner{
+    position: absolute;
+    display: none;
+}
+.menu-inner .menu-item{
+    display: block;
+}
+.menu-item:hover .menu-inner{
+    display: block;
+}
+.menu-inner-inner{
+    position: absolute;
+    display: none;
+    left: 327px;
+    top: 133px;
+    white-space: nowrap;
+}
+.menu-inner-inner .menu-item{
+    display: block;
+}
+.menu-item .hidden:hover .menu-inner-inner{
+    display: block;
 }

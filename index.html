@@ -5,29 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multilevel Menu</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="menu">
         <ul>
-            <li>
-                <a href="#">
+            <li class="menu-item">
+                <a class="menu-item-link" href="#">
                     Home
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="menu-item">
+                <a class="menu-item-link" href="#">
                     Products +
                 </a>
+                <ul class="menu-inner">
+                    <li class="menu-item">
+                        <a class="menu-item-link" href="#">
+                            Product 1
+                        </a>
+                    </li>
+                    <li class="menu-item hidden">
+                        <a class="menu-item-link" href="#">
+                            Product 2 +
+                        </a>
+                        <ul class="menu-inner-inner">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="#">
+                                    Tub Item
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="#">
+                                    Tub Item
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="#">
+            <li class="menu-item">
+                <a class="menu-item-link" href="#">
                     About
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="menu-item">
+                <a class="menu-item-link" href="#">
                     Contact
                 </a>
             </li>
